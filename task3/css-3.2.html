@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Task3</title>
 
 	<style type="text/css">
@@ -10,49 +11,73 @@
 			background-color: #68cdd5;
 			text-align: center;
 			margin: 0;
+			font-size: 12px;
 		}
 
 		/*框架样式*/
 		.frame_head{
-			width: 100%;
-			height: 30vw;
-			background-color: #B8860B ;
+			height: 180px;
 		}
 
 		.frame_body{
-			width: 100%;
-			height: 30vw;
-			background-color: #008B8B;
+			height: 150px;
+			padding: 30px 15% 30px 15%;
 		}
 		
-		.frame_foot{
-			float: top;
-			width: 100%;
-			height: 30vw;
-			background-color: #006400;
+		.frame_foot1{
+			position: relative;
+			float: left;
+			width: 50%;
+
+		}
+		.frame_foot2{
+			position: relative;
+			float: right;
+			width: 50%;
 		}
 
+
+
 		/*头部样式*/
+		.img_return{
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+		.img_logo{
+			width: 90px;
+			height: 36px;
+			position:relative;
+			top: 100px;
+		}
 		/*内容样式*/
 		p{
-			position: absolute;
-			margin: 10%;
-			text-align: center;
+			position: relative;
 			color: #FFF;
 		}
 
 		/*尾部样式*/
-		.ico1{
-			width: 38%;
-			padding: 5%;
-			background-color: #CCC;
-			/*position: absolute;*/
-			text-align: center;
+		.ico_foot1{
+			width: 48px;
+			height: 48px;
+			position: relative;
 		}
-		h3{
-			margin: 0 auto;
+		.ico_foot2{
+			width: 48px;
+			height: 48px;
+			position: relative;
+		}
+		
+
+		.ico_text1{
+			position: relative;
 			color: #FFF;
 		}
+		.ico_text2{
+			position: relative;
+			color: #FFF;
 	</style>
 		
 
@@ -63,30 +88,25 @@
 
 <!-- 框架头-->
 	<div class="frame_head">
-		<img src="images/return.png" style="position:absolute;left: 0;margin: 5%">
-		<img src="images/logo.png" style="margin: 15%; ">
+		<img class="img_return" src="images/return.png">
+		<img class="img_logo" src="images/logo.png">
 	</div>
 
 
-<!-- 框架正文-->
+<!-- 框架内容-->
 	<div class="frame_body">
 			<p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸弹堡等多种聚会游戏，以线下聚会桌游道具为主。</p>
 	</div>
 
 
 <!-- 框架尾-->
-	<div class="frame_foot">
-		<!--left-->
-		<div class="ico1" style="float: left;">
-			<img src="images/icon1.png" style="margin: 5%">
-			<h3>CSS-3812</h3>
-		</div>
-		<!--right-->
-		<div class="ico1" style="float: right;">
-			<img src="images/icon2.png" style="margin: 5%">
-			<h3>修真院</h3>
-		</div>
+	<div class="frame_foot1">
+		<img class="ico_foot1" src="images/icon1.png">
+		<p class="ico_text1">2222222</p>
 	</div>
-
+	<div class="frame_foot2">
+			<img class="ico_foot2" src="images/icon2.png">
+			<p class="ico_text2">BJPTTeng</p>
+	</div>
 </body>
 </html>
