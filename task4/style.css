@@ -1,0 +1,52 @@
+body{
+	background-color: #eee;
+	margin: 0 auto;
+	color: #fff;
+	font-family:'黑体';
+}
+
+/***头部***/
+.top{
+	height: 40px;
+	background-color: #5fc0cd;
+	margin: 0 auto;
+	line-height: 40px;
+}
+.top h4{
+	text-align: center;
+	margin: 0 auto;
+	font-weight: normal;
+}
+.top a{
+	position: absolute;
+	color: #fff;
+	text-decoration: none;
+}
+.top_a1{
+	float: left;
+	left: 10px;
+}
+.top_a2{
+	float: right;
+	right: 10px;
+}
+
+/***输入区***/
+.imp{
+	height: 50px;
+	margin:10px 0 10px 0;
+	background: #fff;
+	position: relative;
+}
+.img_ico{
+	width: 14px;
+	height: 22px;
+	margin: 0 20px 0 20px;
+	float: left;
+}
+.img_line{
+	width: 20px;
+	height: 50px;
+	margin: 0 auto;
+	float: left;
+}
