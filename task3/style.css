@@ -1,0 +1,71 @@
+body{
+	background-color: #68cdd5;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+}
+
+/*框架样式*/
+	.frame_head{
+
+		height: 180px;
+	}
+
+	.frame_body{
+		height: 150px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30px 15% 30px 15%;
+	}
+		
+	.frame_foot1{
+		position: relative;
+		float: left;
+		width: 50%;
+	}
+	
+	.frame_foot2{
+		position: relative;
+		float: right;
+		width: 50%;
+	}
+
+/*头部样式*/
+	.img_return{
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+	}
+	.img_logo{
+		width: 90px;
+		height: 36px;
+		position:relative;
+		top: 100px;
+	}
+/*内容样式*/
+	.tetx_p{
+		display: inline-block;
+		text-align: left;
+		color: #FFF;
+	}
+/*尾部样式*/
+	.ico_foot1{
+		width: 48px;
+		height: 48px;
+		position: relative;
+	}
+	.ico_foot2{
+		width: 48px;
+		height: 48px;
+		position: relative;
+	}
+
+	.ico_text1{
+		position: relative;
+		color: #FFF;
+	}
+	.ico_text2{
+		position: relative;
+		color: #FFF;
