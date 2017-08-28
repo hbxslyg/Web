@@ -77,6 +77,19 @@ input{
 .button_login{
 	height: 50px;
 	width: 100%;
-	background-color: #5fc0cd;
 	margin: 0 auto;
+}
+
+.button_login input{
+	margin: 0 auto;
+	background-color: #5fc0cd;
+	color: #fff;
+}
+
+.forget{
+	float: right;
+	font-size: 13px;
+	margin: 10px;
+	font-family: '黑体';
+	color: #5fc0cd;
 }
