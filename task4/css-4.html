@@ -8,32 +8,41 @@
 
 </head>
 <body>
+<!--头部-->
 	<div class="top">
 		<a href="#" class="top_a1">注册</a>
 		<a href="#" class="top_a2">关闭</a>
 		<h4>登录</h4>
 	</div>
-
+<!--信息输入部分-->
+<form>
+	<!--账号框-->
 	<div class="imp">
-		
-		<div class="imp_name">
+		<div class="imp_left">
 			<img class="img_ico" src="images/iphone.png">
 			<img class="img_line" src="images/line.png">
-			<div class="imp_text">
-				<input type="text" name="usrname">
-			</div>
+		</div>
+		<div class="imp_right">
+			<input class="inp_name" type="number" name="usrname" value="" placeholder="请输入手机号" maxlength="11" pattern="[0-9]" >
 		</div>
 	</div>
 
+	<!--密码框-->
 	<div class="imp">
-		<div class="imp_password">
-
+		<div class="imp_left">
+			<img class="img_ico" src="images/locked.png">
+			<img class="img_line" src="images/line.png">
+		</div>
+		<div class="imp_right">
+			<input class="inp_pw" type="password" name="password" value="" placeholder="请输入密码">
 		</div>
 	</div>
 
-
-<div class="sign_area">
-</div>
+	<!--登录按钮-->
+	<div class="button_login">
+		<input type="button" name="button"  value="登录">
+	</div>
+</form>
 
 </body>
 </html>
