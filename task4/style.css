@@ -17,11 +17,13 @@ body{
 	text-align: center;
 	margin: 0 auto;
 	font-weight: normal;
+	cursor: default;
 }
 .top a{
 	position: absolute;
 	color: #fff;
 	text-decoration: none;
+	cursor: pointer;
 }
 .top_a1{
 	float: left;
@@ -74,16 +76,15 @@ input{
 	margin-left: 20px; 
 }
 
-.button_login{
+button{
 	height: 50px;
 	width: 100%;
-	margin: 0 auto;
-}
-
-.button_login input{
-	margin: 0 auto;
 	background-color: #5fc0cd;
+	margin: 0 auto;
+	border: 0;
 	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
 }
 
 .forget{
