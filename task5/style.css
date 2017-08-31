@@ -140,11 +140,6 @@ button{
 }
 
 /*详细信息*/
-.box{
-	width: 100%;
-	height: auto;
-}
-
 .bar{
 	float: left;
 	width: 100%;
@@ -165,11 +160,50 @@ button{
 	line-height:50px;
 }
 
-.bar_son{
+
+.box{
 	float: left;
 	width: 100%;
+}
+
+.bar_son{ 
 	height: 50px;
-	margin-right: 0;
+	margin-left: 10px;
+	padding-left: 10px;
 	font-size: 12px;
 	border-bottom: 1px solid #5fc0cd;
+}
+
+.food{
+	float: left;
+	margin-right: 20px;
+}
+
+.star{
+	position: relative;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 19px 10px 0 0;
+}
+.bar_son p{
+	margin: 0;
+	float: left;
+	line-height: 50px;
+}
+
+
+.star_0{
+	float: left;
+	width: 1px;
+	height: 20px;
+	margin: 15px;
+
+}
+
+.p_left{
+	color: #aaa;
+}
+.p_money{
+	color: red;
 }
