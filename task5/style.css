@@ -167,11 +167,13 @@ button{
 }
 
 .bar_son{ 
-	height: 50px;
 	margin-left: 10px;
 	padding-left: 10px;
 	font-size: 12px;
 	border-bottom: 1px solid #5fc0cd;
+	overflow: auto ;
+	align-items: center;
+
 }
 
 .food{
@@ -204,6 +206,25 @@ button{
 .p_left{
 	color: #aaa;
 }
+
+.p_right{
+	color: #aaa;
+}
+
 .p_money{
 	color: red;
+}
+
+
+.bar_center_right{
+	height: auto;
+	overflow: auto;
+	margin-right: 10px;
+}
+.bar_center_left{
+
+	height: 100%;
+	float: left;
+	top: 100px;
+	bottom: 0;
 }
