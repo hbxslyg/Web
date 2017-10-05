@@ -103,7 +103,7 @@
             margin-top: 30px;
         }
         main ul li{
-            height: 80px;
+            height: 70px;
             /*border: 1px solid #000;*/
             text-align: left;
         }
@@ -127,23 +127,50 @@
             height: 50px;
             /*background-color: cornflowerblue;*/
         }
-        main .li-right [type]{
-            width: 240px;
+        main li [type]{
+            width: 320px;
             height: 25px;
             padding-left:5px;
             border: 1px solid #a3a3a3;
             border-radius: 3px;
             box-shadow: 0 2px 4px #eeeeee inset;
         }
-        .accounts{
-            width: 50px;
+        main .li-right span{
+            color: #000;
+            font-weight: bold;
         }
-        .pwd{
+        main select{
+            width: 85px;
+            height: 27px;
+            font-weight: bold;
+            border: 1px solid #a3a3a3;
+        }
+        main li .accounts{
+            width: 210px;
+        }
+        main li .pwd{
+            font-size:30px;
+         }
+        main .phone-border{
+            float: left;
+            height: 30px;
+            background-color: red;
+        }
+        main .state{
             width: 50px;
+            height: 15px;
+            border: 1px solid #000;
+            box-shadow:none;
+        }
+        main li .phone{
+            margin: -30px;
+            box-sizing: border-box;
+            padding-left:50px;
         }
         main p{
             font-size: 12px;
-            color: #9eaead;
+            line-height: 27px;
+            color: #959595;
         }
 
         footer{
@@ -184,8 +211,8 @@
                 <li>
                     <div class="li-left"><span>*</span>邮件地址</div>
                     <div class="li-right">
-                        <input class="accounts" type="text"> @
-                        <select>
+                        <input type="text" class="accounts"><span>@</span
+                    ><select>
                             <option>163.com</option>
                             <option>126.com</option>
                             <option>yeah.net</option>
@@ -201,26 +228,29 @@
                 </li> <li>
                     <div class="li-left"><span>*</span>确认密码</div>
                     <div class="li-right">
-                        <input type="password">
+                        <input type="password" class="pwd">
                         <p>请再次填写密码</p>
                     </div>
                 </li> <li>
                     <div class="li-left"><span>*</span>手机号码</div>
                     <div class="li-right">
-                        <div><select name="" id=""></select><input type="text"></div>
+                        <div class="phone-border">
+                            <select class="state" name="" id=""></select>
+                        </div>
+                        <input type="text" class="phone">
                         <p>忘记密码时，可以通过该手机号码快速找回密码</p>
                     </div>
                 </li> <li>
                     <div class="li-left"><span>*</span>验证码</div>
                     <div class="li-right">
-                        <input type="text">
+                        <input type="text" class="verify">
                         <p>请填写图片中的字符，不区分大小写</p>
                         <input type="button" name="免费获取验证码">
                     </div>
                 </li> <li>
                     <div class="li-left"><span>*</span>短信验证码</div>
                     <div class="li-right">
-                        <input type="text">
+                        <input type="text" class="phoneVerify">
                         <p>请查收手机短信，并填写短信中的验证码</p>
                     </div>
                 </li>
