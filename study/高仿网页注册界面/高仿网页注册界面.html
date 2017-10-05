@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高仿网易注册界面</title>
+    <style>
+        html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        body{
+            background-color: #f8f8f8;
+        }
+
+        header{
+            width: 960px;
+            height: 81px;
+            margin: 0 auto;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+        header .bg{
+            float: left;
+            width:650px;
+            height:50px;
+            background-image: url(images/glb_v2.png);
+        }
+        header .right{
+            float: right;
+            width: 200px;
+            height: 20px;
+            padding: 5px 2px;
+            text-align: right;
+            font-size: 12px;
+        }
+        header .right a{
+            text-decoration: none;
+            padding: 3px;
+            color: #122e8d;
+        }
+        header .bg  a{
+            float: left;
+            width: 125px;
+            height: 25px;
+            font-size: 0;
+        }
+        main{
+            width: 960px;
+            height: 750px;
+            margin: 0 auto;
+            /*background-color: green;*/
+        }
+        main .m-top{
+            height: 36px;
+            padding-left: 20px;
+            color: white;
+            font-size: 14px;
+            line-height: 36px;
+            border-top-left-radius: 5px;
+            border-top-right-radius:5px;
+            border: 1px solid  slateblue;
+            border-bottom:1px solid #507cab;
+            background-image: url(images/bgx.png);
+        }
+        main .m-left{
+            float: left;
+            width: 644px;
+            height: 710px;
+            box-sizing: border-box;
+            border: 1px solid #dcdcdc;
+            background-color: white;
+            text-align: center;
+        }
+        main .m-right{
+            float: right;
+            width: 316px;
+            height: 710px;
+            background-color: pink;
+        }
+        main .mode{
+            width: 412px;
+            height: 34px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 5px;
+            background-color: blue;
+            background-image: url(images/tab.jpg);
+        }
+        main .mode div{
+            float: left;
+            width: 137px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 35px;
+        }
+        main .mode .mode1{
+            color: white;
+            font-weight: bold;
+        }
+        main ul{
+            list-style:none;
+            margin-top: 30px;
+        }
+        main ul li{
+            height: 80px;
+            /*border: 1px solid #000;*/
+            text-align: left;
+        }
+        main .li-left{
+            box-sizing: border-box;
+            float: left;
+            width: 180px;
+            height: 40px;
+            text-align: right;
+            line-height: 30px;
+            padding-right: 20px;
+            /*background-color: red;*/
+        }
+        main ul li span{
+            color: red;
+            margin: 5px;
+        }
+        main .li-right{
+            float: left;
+            width: 400px;
+            height: 50px;
+            /*background-color: cornflowerblue;*/
+        }
+        main .li-right [type]{
+            width: 240px;
+            height: 25px;
+            padding-left:5px;
+            border: 1px solid #a3a3a3;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px #eeeeee inset;
+        }
+        .accounts{
+            width: 50px;
+        }
+        .pwd{
+            width: 50px;
+        }
+        main p{
+            font-size: 12px;
+            color: #9eaead;
+        }
+
+        footer{
+            width: 960px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!--头部 开始-->
+    <header>
+        <div class="bg">
+            <a href="#" title="网易163免费邮箱">网易163免费邮箱</a>
+            <a href="#" title="网易126免费邮箱">网易126免费邮箱</a>
+            <a href="#" title="网易Yeah.net免费邮箱">网易Yeah.net免费邮箱</a>
+        </div>
+        <div class="right">
+            <a href="#">了解更多</a> |
+            <a href="#">反馈意见</a>
+        </div>
+    </header>
+    <!--头部 结束-->
+
+    <!--主体 开始-->
+    <main>
+
+        <div class="m-top">欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</div>
+        <div class="m-left">
+            <form action="">
+            <div class="mode">
+                <div class="mode1">注册字母邮箱</div>
+                <div class="mode2">注册手机号码邮箱</div>
+                <div class="mode3">注册VIP邮箱</div>
+            </div>
+            <ul>
+                <li>
+                    <div class="li-left"><span>*</span>邮件地址</div>
+                    <div class="li-right">
+                        <input class="accounts" type="text"> @
+                        <select>
+                            <option>163.com</option>
+                            <option>126.com</option>
+                            <option>yeah.net</option>
+                        </select>
+                        <p>6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+                    </div>
+                </li> <li>
+                    <div class="li-left"><span>*</span>密码</div>
+                    <div class="li-right">
+                        <input type="password" class="pwd">
+                        <p>6~16个字符，区分大小写</p>
+                    </div>
+                </li> <li>
+                    <div class="li-left"><span>*</span>确认密码</div>
+                    <div class="li-right">
+                        <input type="password">
+                        <p>请再次填写密码</p>
+                    </div>
+                </li> <li>
+                    <div class="li-left"><span>*</span>手机号码</div>
+                    <div class="li-right">
+                        <div><select name="" id=""></select><input type="text"></div>
+                        <p>忘记密码时，可以通过该手机号码快速找回密码</p>
+                    </div>
+                </li> <li>
+                    <div class="li-left"><span>*</span>验证码</div>
+                    <div class="li-right">
+                        <input type="text">
+                        <p>请填写图片中的字符，不区分大小写</p>
+                        <input type="button" name="免费获取验证码">
+                    </div>
+                </li> <li>
+                    <div class="li-left"><span>*</span>短信验证码</div>
+                    <div class="li-right">
+                        <input type="text">
+                        <p>请查收手机短信，并填写短信中的验证码</p>
+                    </div>
+                </li>
+
+            </ul>
+            </form>
+        </div>
+        <div class="m-right"></div>
+    </main>
+    <!--主体 结束-->
+
+    <!--尾部 开始-->
+    <footer></footer>
+    <!--尾部 结束-->
+</body>
+</html>
