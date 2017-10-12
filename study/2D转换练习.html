@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 423px;
+            height: 628px;
+            margin: 100px auto;
+            background: url(images/1.mp4) center no-repeat;
+            background-color: black;
+            border: 1px solid #000;
+            perspective:800px;
+            /*position: relative;*/
+
+
+        }
+        video{
+            position: absolute;
+            top:200px;
+            width: 0;
+            transition-delay: 0.7s;
+
+        }
+        img{
+            transition:transform 1s ease;
+            transform-origin:left bottom;
+            z-index: 999;
+        }
+        div:hover img{
+            transform:rotateY(100deg);
+            /*transform:rotate(30deg)*/
+        }
+        div:hover video{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <video src="images/1.mp4" autoplay loop></video>
+        <img src="images/k.jpg" alt="">
+</div>
+</body>
+</html>
