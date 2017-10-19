@@ -13,7 +13,6 @@ a {text-decoration:none;}
     position: fixed;
     left:0;
     top: 0;
-    margin-bottom: 30px;
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -145,7 +144,6 @@ a {text-decoration:none;}
     position: fixed;
     bottom: 5px;
     width: 100%;
-    /*background-color:red;*/
 }
 .footer a{
     float: left;
