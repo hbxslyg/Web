@@ -50,6 +50,7 @@ a {text-decoration:none;}
     left: 10px;
     width: 200px;
     height: 60px;
+    color: white;
 }
 .banner .ban-in>img{
     width: 60px;
@@ -78,7 +79,7 @@ a {text-decoration:none;}
 
 /*内容*/
 .content{
-
+    margin-bottom: 40px;
 }
 .content>div:first-child{
     width: 100%;
@@ -88,9 +89,6 @@ a {text-decoration:none;}
     border-bottom: 1px solid #58c0ce;
     box-sizing: border-box;
 
-}
-.content{
-    margin-bottom: 40px;
 }
 .content span{
     position: relative;
