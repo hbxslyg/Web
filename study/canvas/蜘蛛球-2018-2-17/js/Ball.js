@@ -135,7 +135,7 @@ var Ball = (function () {
         this.ctx.beginPath();
         this.ctx.moveTo(this.ball.x,this.ball.y);
         this.ctx.lineTo(this.x,this.y);
-        this.ctx.lineWidth = 4;
+        this.ctx.lineWidth = 3;
         this.ctx.strokeStyle = 'red';
         this.ctx.stroke();
 
