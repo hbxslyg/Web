@@ -67,7 +67,7 @@ var Game = (function () {
             that.canvas.addEventListener('touchmove',function (event) {
                 that.ball.shengzi.deg = (event.targetTouches[0].clientX - x) / that.canvas.width * 90;
                 console.log(x,that.ball.shengzi.deg)
-                return false;
+
             });
 
             // 离开事件

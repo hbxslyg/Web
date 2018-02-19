@@ -1,7 +1,9 @@
 var Ball = (function () {
     function Ball(zjz) {
         this.zjz = zjz;
+
         this.R = this.zjz.width / 20;
+
         //this.x = this.zjz.width / 2 - this.R / 2;
         this.x = 150;
         //this.y = this.zjz.height - 50;
