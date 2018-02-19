@@ -135,7 +135,7 @@ var Ball = (function () {
         this.ctx.beginPath();
         this.ctx.moveTo(this.ball.x,this.ball.y);
         this.ctx.lineTo(this.x,this.y);
-        this.ctx.lineWidth = 2;
+        this.ctx.lineWidth = 4;
         this.ctx.strokeStyle = 'red';
         this.ctx.stroke();
 
@@ -143,6 +143,7 @@ var Ball = (function () {
 
     // 画预判箭头
     Shengzi.prototype.jiantou = function () {
+        this.ball.shengzi.length = this.ball.R + 10;
 
         var Hdeg = (this.deg - 90) * Math.PI / 180;
 

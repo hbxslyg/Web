@@ -61,7 +61,6 @@ var Game = (function () {
             that.ball.shengzi.deg = 0;
             that.ball.jiantou = true;
             var x = event.targetTouches[0].clientX;
-            that.ball.shengzi.length = 25;
 
             // 滑动事件
             that.canvas.addEventListener('touchmove',function (event) {
@@ -95,7 +94,6 @@ var Game = (function () {
         this.canvas.onmousedown = function (event) {
             that.ball.jiantou = true;
             var x = event.clientX;
-            that.ball.shengzi.length = 40;
             that.canvas.onmousemove = function (event) {
                 that.ball.shengzi.deg = (event.clientX - x) / that.canvas.width * 90;
             };
