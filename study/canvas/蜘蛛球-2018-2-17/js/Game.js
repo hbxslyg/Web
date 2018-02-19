@@ -126,16 +126,25 @@ var Game = (function () {
     Game.prototype.isBarrier = function () {
         var r = this.ball.R;
         for ( var i = 0 ; i < this.zhuan.data.length ; i++ ) {
-            var x1 = this.zhuan.data[i].x,
-            y1 = this.zhuan.data[i].y,
-            x2 = x1 + 100,
-            y2 = y1 + 100;
+            var x1 = this.zhuan.data[i].x - r,
+            y1 = this.zhuan.data[i].y - r,
+            x2 = x1 + 50 + r * 2,
+            y2 = y1 + 50 + r * 2;
 
-            if ( this.ball.y > y1 - r && this.ball.y < y2 + r && this.ball.x > x1 - r && this.ball.x < x2 + r) {
+            if ( this.ball.y > y1 && this.ball.y < y2 && this.ball.x > x1 && this.ball.x < x2) {
                 clearInterval(this.timer);
             }
 
-
+/*
+            this.ctx.beginPath();
+            this.ctx.moveTo(x1,y1);
+            this.ctx.lineTo(x1,y2);
+            this.ctx.lineTo(x2,y2);
+            this.ctx.lineTo(x2,y1);
+            this.ctx.closePath();
+            this.ctx.strokeStyle = '#ccc';
+            this.ctx.stroke();
+*/
 
         }
 

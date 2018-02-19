@@ -4,10 +4,10 @@ var Ball = (function () {
 
         this.R = this.zjz.width / 20;
 
-        //this.x = this.zjz.width / 2 - this.R / 2;
+        this.x = this.zjz.width / 2 - this.R / 2;
         this.x = 150;
         //this.y = this.zjz.height - 50;
-        this.y = 100;
+        this.y = 50;
 
 
         this.zl = 0.1;            // 重力
@@ -157,7 +157,7 @@ var Ball = (function () {
         this.ctx.moveTo(this.ball.x,this.ball.y);
         this.ctx.lineTo(this.x,this.y);
         this.ctx.lineWidth = 2;
-        this.ctx.strokeStyle = 'blue';
+        this.ctx.strokeStyle = '#ccc';
         this.ctx.stroke();
 
     };
